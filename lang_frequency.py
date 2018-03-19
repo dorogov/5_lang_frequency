@@ -15,9 +15,9 @@ def load_data(filepath):
 
 
 def get_most_frequent_words(text):
-    10_words = sorted(text, key=lambda x: x[1], reverse=True)
-    del 10_words[0]
-    return 10_words[:10]
+    ten_words = sorted(text, key=lambda x: x[1], reverse=True)
+    del ten_words[0]
+    return ten_words[:10]
 
 
 if __name__ == '__main__':
