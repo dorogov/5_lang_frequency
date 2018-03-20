@@ -2,8 +2,8 @@ import re
 import collections as cll
 
 def load_data(filepath):
-    data = re.findall('\w+', open(filepath).read().lower())
-    return data
+    list_of_words = re.findall('\w+', open(filepath).read().lower())
+    return list_of_words
 
 
 def get_most_frequent_words(text):
@@ -11,5 +11,5 @@ def get_most_frequent_words(text):
 
 
 if __name__ == '__main__':
-    g = get_most_frequent_words(load_data())
-    print(g)
+    word_frequency = get_most_frequent_words(load_data())
+    print(word_frequency)
