@@ -7,7 +7,8 @@ def load_data(filepath):
 
 
 def get_most_frequent_words(text):
-    return cll.Counter(text).most_common(10)
+    number_words_max_frequency = 10
+    return cll.Counter(text).most_common(number_words_max_frequency)
 
 
 if __name__ == '__main__':
