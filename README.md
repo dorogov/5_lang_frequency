@@ -11,12 +11,6 @@ import re # для работы с регулярными выражениями
 from collections import Counter # для подсчета количества вхождений слов
 ```
 
-- в терминале: 
-```#!powershell
->>> ... python3 lang_frequency.py /.../hamlet.txt
-
-```
-
 2. функция открывающая файл и считывающая его
 ```#!powershell
 def load_data(filepath):
