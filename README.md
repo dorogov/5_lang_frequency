@@ -11,15 +11,13 @@ import re # для работы с регулярными выражениями
 from collections import Counter # для подсчета количества вхождений слов
 ```
 
-
-``'
 - в терминале: 
 ```#!powershell
 >>> ... python3 lang_frequency.py /.../hamlet.txt
 
 ```
 
-3. функция открывающая файл и считывающая его
+2. функция открывающая файл и считывающая его
 ```#!powershell
 def load_data(filepath):
     with open(filepath) as file:
@@ -28,14 +26,14 @@ def load_data(filepath):
 
 ```
 
-4. фукция определяющую 10 наиболее часто встречающихся слов с указанием сколько раз они встречатся
+3. фукция определяющую 10 наиболее часто встречающихся слов с указанием сколько раз они встречатся
 ```#!powershell
 def load_data(filepath):
     with open(filepath) as file:
         text = file.read()
     return text
 ```
-5. Выводим значение в терминал
+4. Выводим значение в терминал
 ```#!powershell
 if __name__ == '__main__':
     filepath = sys.argv[1]
