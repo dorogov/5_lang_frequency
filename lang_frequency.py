@@ -21,10 +21,10 @@ def get_most_frequent_words(text):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument('-f', '--file', required=True, metavar='ФАЙЛ',
+    parser.add_argument('-f', '--file', required=True, metavar='ФАЙЛ', \
                         help='Путь до текстового файла.')
-    namespace = parser.parse_args()
-    text = load_data(namespace.file)
-    ten_words = get_most_frequent_words(text)
-    for key, item in ten_words:
-        print('слово - {} - вхождений - {}'.format(key, item))
+    args = parser.parse_args()
+    text = load_data(args.file)
+    most_common_words = get_most_frequent_words(text)
+    for word, count in most_common_words:
+        print('слово - {} - вхождений - {}'.format(word, count))
