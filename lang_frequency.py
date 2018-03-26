@@ -21,7 +21,9 @@ def get_most_frequent_words(text):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument('-f', '--file', required=True, metavar='ФАЙЛ', \
+    parser.add_argument('-f', '--file', 
+                        required=True, 
+                        metavar='ФАЙЛ',
                         help='Путь до текстового файла.')
     args = parser.parse_args()
     text = load_data(args.file)
