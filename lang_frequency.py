@@ -13,7 +13,6 @@ def load_data(filepath):
     return text
 
 
-
 def get_most_frequent_words(text):
     list_of_words = re.findall('\w+', text.lower())
     number_words_showen = 10
