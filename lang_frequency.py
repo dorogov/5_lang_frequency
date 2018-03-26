@@ -24,7 +24,7 @@ if __name__ == '__main__':
     parser.add_argument('-f', '--file', required=True, metavar='ФАЙЛ',
                         help='Путь до текстового файла.')
     namespace = parser.parse_args()
-    data = load_data(namespace.file)
-    ten_words = get_most_frequent_words(data)
+    text = load_data(namespace.file)
+    ten_words = get_most_frequent_words(text)
     for key, item in ten_words:
         print('слово - {} - вхождений - {}'.format(key, item))
