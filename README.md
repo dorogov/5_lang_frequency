@@ -9,5 +9,5 @@
 
 **Пример использования:**
 ```
-python lang_frequency.py -f war_and_peace.txt
+>>> python3 lang_frequency.py -f war_and_peace.txt
 ```
